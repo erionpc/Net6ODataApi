@@ -46,7 +46,23 @@ Newtonsoft.Json.JsonSerializationException: Self referencing loop detected for p
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 ```
 
-When `.AddNewtonsoftJson()` is not included in the builder services, OData queries work, but HTTP Patch doesn't.
+When `.AddNewtonsoftJson()` is not included in the builder services, OData queries work, but HTTP Patch doesn't. The following error is returned:
+```
+{
+    "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-ce52f99599fcbc4b7cdfb5b73a604523-3efcf579a33df726-00",
+    "errors": {
+        "$": [
+            "The JSON value could not be converted to Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Net6OData.API.WeatherForecast]. Path: $ | LineNumber: 0 | BytePositionInLine: 1."
+        ],
+        "patchDocument": [
+            "The patchDocument field is required."
+        ]
+    }
+}
+```
 
 ## Sample OData query:
 HTTP GET:
