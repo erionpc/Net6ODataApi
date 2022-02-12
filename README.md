@@ -3,7 +3,9 @@ This is an out-of-the-box implementation of a C# web-API on .NET 6.0 with suppor
 
 It shows a problem that exists with Newtonsoft.Json when deserialising OData queries.
 
-This solution contains a controller with 2 methods: HTTP Get and HTTP Patch. The Get method returns sample weather forecast data. The Patch method enables partial updates on the sample weather forecast data.
+This solution contains a controller with 2 methods: HTTP Get and HTTP Patch. 
+The Get method returns sample weather forecast data. 
+The Patch method enables partial updates on the sample weather forecast data.
 
 When `.AddNewtonsoftJson()` is included in the [builder services](/src/Net6OData.API/Program.cs), including any OData queries in the requests causes a Newtonsoft.Json deserialization error as follows:
 ```
