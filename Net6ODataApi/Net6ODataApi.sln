@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net6OData.API", "Net6OData.API\Net6OData.API.csproj", "{A90FE17B-20AF-4F89-8539-1F82916CB1AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A90FE17B-20AF-4F89-8539-1F82916CB1AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A90FE17B-20AF-4F89-8539-1F82916CB1AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A90FE17B-20AF-4F89-8539-1F82916CB1AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A90FE17B-20AF-4F89-8539-1F82916CB1AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B35D7B9-2F99-4091-9FAF-A07C05C2D771}
+	EndGlobalSection
+EndGlobal
